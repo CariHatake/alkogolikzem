@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Oswald:wght@200..700&family=Poppins:wght@400;500;700;800&family=Rubik+Wet+Paint&family=Tiny5&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Caveat", cursive;
+	font-weight: 500;
+	font-style: normal;
+	background: #000;
+	color: #fff;
+}
+
+.container {
+	width: 600;
+	padding: 0 50px;
+}
+
+.wrapper {
+	width: 100%;
+}
+
+header {
+	padding: 50px 0px;
+	margin: 20px 0;
+}
+
+header .logo {
+	text-transform: uppercase;
+	font-size: 29px;
+	font-weight: 800;
+	color: #5324d4;
+}
+
+header nav {
+	float: right;
+	width: 50%
+}
+
+header nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	height: 90%;
+	color: #fff;
+}
+
+header nav ul li:not(.btn) a:hover {
+	border-bottom: 5px solid #9300ff;
+}
+header nav ul li.btn a {
+	background: #14005e;
+	padding: 10px 40px;
+	border-radius: 5px;
+	color: #00ff12;
+	font-weight: 700;
+	transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover {
+	background: #a12499;
+	color: #fff;
+}
+
+.hero {
+	padding-bottom: 100px;
+	position: relative;
+	z-index: 1;
+}
+
+.hero-info {
+	width: 530px;
+	padding-top: 70px;
+}
+
+.hero-info h1 {
+	float: right;
+	width: 200px;
+	font-size: 50px;
+	font-weight: 700;
+}
+
+.hero-info p {
+	font-weight: 400;
+	line-height: 170%;
+	margin: 30px 0;
+}
+
+.uppp {
+	float: right;
+	width: 200px;
+	font-weight: 700;
+	position: relative;
+	top: -200px
+}
+
+.hero img {
+	width: 55%;
+	border-radius: 10px;
+}
+
+
+
+@media (max-width: 600px) {
+    header span {
+		width: 100%;
+		position: relative;
+		left: 25%;
+	}
+	header nav ul li {
+		position: relative;
+		top: 70px;
+		left: -130px;
+	}
+}
+
+@media (max-width: 570px) {
+	header nav ul li {
+		position: relative;
+		top: 70px;
+		left: -110px;
+	}
+}
+
+@media (max-width: 567px) {
+	header nav ul li {
+		position: relative;
+		top: 40px;
+		left: -110px;
+	}
+}
+
+@media (max-width: 500px) {
+	header nav ul li {
+		position: relative;
+		top: 40px;
+		left: -70px;
+	}
+}
+
+@media (max-width: 420px) {
+	header span {
+		position: relative;
+		left: 130px;
+	}
+	header nav ul li {
+		position: relative;
+		top: 40px;
+		left: -30px;
+		margin-right: 100px;
+	}
+}
